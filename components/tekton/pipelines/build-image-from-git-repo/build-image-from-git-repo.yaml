@@ -44,7 +44,7 @@ spec:
           value: $(params.GIT_REF)
       taskRef:
         name: git-clone
-        kind: Task
+        kind: ClusterTask
       workspaces:
         - name: output
           workspace: pipeline-ws
