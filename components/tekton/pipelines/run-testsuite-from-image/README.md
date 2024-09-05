@@ -3,12 +3,12 @@
 The `run-testsuite-from-image` base pipeline runs a specific testsuite from
 a base image containing the test suites.
 
-## Install 
+## Install
 
 Install dependencies from task catalog:
 
 ```console
-oc create -k github.com/redhat-partner-solutions/vse-catalog/components/tekton/tasks?ref=main
+oc create -k github.com/nocturnalastro/vse-catalog/components/tekton/tasks?ref=main
 ```
 
 Install pipeline:

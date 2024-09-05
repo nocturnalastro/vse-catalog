@@ -18,7 +18,7 @@ Or, without cloning the repo:
 
 ```
 oc apply -k
-https://github.com/redhat-partner-solutions/vse-catalog/components/tekton
+https://github.com/nocturnalastro/vse-catalog/components/tekton
 ```
 
 Reference the catalog (tekton Tasks and tekton Pipelines) without cloning the repo as  part of your own GitOps repo:
@@ -30,5 +30,5 @@ kind: Kustomization
 namespace: vse-cicd-catalog
 
 resources:
-  - github.com/redhat-partner-solutions/vse-catalog/components/tekton?ref=main
+  - github.com/nocturnalastro/vse-catalog/components/tekton?ref=main
 ```

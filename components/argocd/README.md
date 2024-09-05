@@ -1,4 +1,4 @@
-# ArgoCD patch required for ZTP deployments 
+# ArgoCD patch required for ZTP deployments
 
 The following patch is required for ZTP worload clusters to be deployed from vse-carslab-hub repository
 
@@ -23,7 +23,7 @@ oc apply -k vse-catalog/components/argocd/overlays/<version>
 Or, without cloning:
 
 ```
-oc apply -k https://github.com/redhat-partner-solutions/vse-catalog/components/argocd/overlays/<version>
+oc apply -k https://github.com/nocturnalastro/vse-catalog/components/argocd/overlays/<version>
 ```
 
 As part of a different overlay in your own GitOps repo:
@@ -32,5 +32,5 @@ As part of a different overlay in your own GitOps repo:
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 bases:
-  - github.com/redhat-partner-solutions/vse-catalog/components/argocd/overlays/<version>?ref=main
+  - github.com/nocturnalastro/vse-catalog/components/argocd/overlays/<version>?ref=main
 ```

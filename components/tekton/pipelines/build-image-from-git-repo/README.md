@@ -1,15 +1,15 @@
 # Build-Image-from-git-repo
 
 The build-image pipeline builds source code from a Git repository into
-a container image and pushes it to a registry. The source code repo MUST 
+a container image and pushes it to a registry. The source code repo MUST
 include a filename with a CONTAINERFILE repo.
 
-## Install 
+## Install
 
 Install dependencies from task catalog:
 
 ```console
-oc create -k github.com/redhat-partner-solutions/vse-catalog/components/tekton/tasks?ref=main
+oc create -k github.com/nocturnalastro/vse-catalog/components/tekton/tasks?ref=main
 ```
 
 Install pipeline:

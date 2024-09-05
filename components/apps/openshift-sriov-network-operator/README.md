@@ -21,7 +21,7 @@ oc apply -k components/apps/sriov-operator/overlays/<channel>
 Or, without cloning:
 
 ```
-oc apply -k https://github.com/redhat-partner-solutions/vse-catalog/components/apps/openshift-sriov-network-operator/overlays/<channel>
+oc apply -k https://github.com/nocturnalastro/vse-catalog/components/apps/openshift-sriov-network-operator/overlays/<channel>
 ```
 
 As part of a different overlay in your own GitOps repo:
@@ -30,5 +30,5 @@ As part of a different overlay in your own GitOps repo:
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 bases:
-  - github.com/redhat-partner-solutions/vse-catalog/components/apps/openshift-sriov-network-operator/overlays/<channel>?ref=main
+  - github.com/nocturnalastro/vse-catalog/components/apps/openshift-sriov-network-operator/overlays/<channel>?ref=main
 ```
